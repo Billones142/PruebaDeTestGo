@@ -13,6 +13,6 @@ func TestMultiplicador_Multiplicar(t *testing.T) {
 	Multiplicador1.Multiplicar(numeros)
 	resultado := Multiplicador1.Resultado
 	if resultado != esperado {
-		t.Errorf("La multiplicacion de %v no dio el resultado esperado, se obtuvo: %d, se esperaba: %d.", numeros, resultado, esperado)
+		t.Errorf("La multiplicacion de %v no dio el resultado esperado, se obtuvo: %d, se esperaba: %d", numeros, resultado, esperado)
 	}
 }
