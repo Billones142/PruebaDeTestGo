@@ -3,14 +3,15 @@ package mul_test
 import (
 	"testing"
 
-	structMultiplicacion "pruebaDeTest.com/multiplicacion"
+	mul "pruebaDeTest.com/multiplicacion"
 )
 
 func TestMultiplicador_Multiplicar(t *testing.T) {
-	Multiplicador := structMultiplicacion.Multiplicador{}
+	var Multiplicador1 mul.Multiplicador
 	numeros := []int{1, 8, 5, 2, 9}
 	esperado := 720
-	resultado := Multiplicador.Multiplicar(numeros)
+	Multiplicador1.Multiplicar(numeros)
+	resultado := Multiplicador1.Resultado
 	if resultado != esperado {
 		t.Errorf("La multiplicacion de %v no dio el resultado esperado, se obtuvo: %d, se esperaba: %d.", numeros, resultado, esperado)
 	}
