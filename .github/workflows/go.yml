@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: go-test-report
+    #- name: go-test-report
     - uses: brian-pickens/go-test-report@v1
       with:
         packages: "pruebaDeTest.com/multiplicacion"
