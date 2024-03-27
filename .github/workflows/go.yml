@@ -18,6 +18,5 @@ jobs:
     - uses: brian-pickens/go-test-report@v1
       with:
         packages: "pruebaDeTest.com/multiplicacion"
-        reports-only: "false"
         summary: "true"
         GO111MODULE: "auto"
